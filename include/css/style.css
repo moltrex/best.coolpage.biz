@@ -1,0 +1,351 @@
+* {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+    border-radius: 0 !important;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    outline: none !important;
+    /*-webkit-transition: all 0.3s ease 0s;*/
+    /*-moz-transition: all 0.3s ease 0s;*/
+    /*-ms-transition: all 0.3s ease 0s;*/
+    /*-o-transition: all 0.3s ease 0s;*/
+    /*transition: all 0.3s ease 0s;*/
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+/*
+
+colors :
+#90afc5 - light blue
+#336b87 - blue
+#2a3132 - darker blue / shadow blue
+#1fae66 - green
+#dbdbdb - light grey
+#eaeaea - lighter grey
+
+*/
+
+/* *** multiple use classes *** */
+.hidden {
+    display: none !important;
+}
+.visible {
+    display: block !important;
+}
+.divider {
+    border-top: 1px solid #1a1a1a;
+    clear: both;
+    height: 1px;
+    width: 100%;
+}
+.divider.borderGrey {
+    border-color: #dbdbdb;
+}
+/* *** bootstrap rw/add *** */
+.nr:before, .nr:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+*[class^="col-"] {
+    padding: 0;
+}
+.form-control:focus {
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 0 transparent;
+}
+.btn-success {
+    background-color: #1fae66;
+}
+/* *** sidebar - content transition *** */
+.sidebar {
+    background-color: #1fae66;
+    height: 100%;
+    left: 0;
+    padding-bottom: 55px;
+    position: fixed;
+    top: 55px;
+    -webkit-transform: translateX(-260px);
+    -moz-transform: translateX(-260px);
+    -ms-transform: translateX(-260px);
+    -o-transform: translateX(-260px);
+    transform: translateX(-260px);
+    width: 260px;
+}
+.sidebar.sidebar-toggle {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.main-section {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.sidebar.sidebar-toggle + .main-section {
+    padding-left: 260px;
+
+}
+/* *** top bar *** */
+header.top-bar-wrap {
+    background-color: #2a3132;
+    height: 55px;
+    line-height: 30px;
+    padding: 0;
+}
+.sidebar-toggle-btn {
+    color: #dbdbdb;
+    display: inline-block;
+    float: left;
+    font-size: 17px;
+    line-height: 55px;
+    padding: 0 15px;
+}
+.logo {
+    display: inline-block;
+    float: right;
+    height: 55px;
+    margin-right: 20px;
+    position: relative;
+    width: 150px;
+}
+.logo span {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    left: 0;
+    line-height: 55px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+}
+.logo:hover + .sidebar-toggle-btn, .sidebar-toggle-btn:hover, .sidebar-toggle-btn:focus {
+    color: #fff;
+}
+.top-bar-search-wrap {
+    padding: 10px 0;
+    width: 300px;
+}
+.search-submit-wrap {
+    background-color: #fff;
+    border: medium none;
+    color: #fff;
+    position: relative;
+}
+.search-submit-wrap:hover {
+    background-color: #fff;
+    border-color: #fff;
+}
+.search-submit-wrap:active {
+    background-color: #fff /*#204d74*/;
+    border-color: #ccc /*#122b40*/;
+}
+.search-submit-wrap .search-submit {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+/* *** user profile btn *** */
+button.menu-profile-btn, button.menu-profile-btn:hover, button.menu-profile-btn:focus {
+    background-color: transparent;
+    border: medium none;
+    -webkit-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    color: #fff;
+    height: 55px;
+}
+button.menu-profile-btn span {
+    margin: 0 2px;
+}
+/* *** user profile dropdown *** */
+
+.menu-profile {
+    display: none;
+    line-height: normal;
+    padding-top: 15px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+}
+.menu-profile-btn:hover + .menu-profile, .menu-profile:hover {
+    display: block;
+}
+.menu-profile-dropdown .menu-profile > * {
+    border: 1px solid #ddd;
+    -moz-box-shadow: 0 3px 2px #ddd;
+    -webkit-box-shadow: 0 3px 2px #ddd;
+    box-shadow: 0 3px 2px #ddd;
+    color: #333;
+    position: relative;
+    right: 0;
+    top: 100%;
+    width: 260px;
+    z-index: 1;
+}
+.menu-profile-dropdown .menu-profile > *:before {
+    border-bottom: 12px solid #ddd;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    content: "";
+    height: 0;
+    right: 10px;
+    position: absolute;
+    top: -12px;
+    width: 0;
+}
+.menu-profile-dropdown .menu-profile > *:after {
+    border-bottom: 12px solid #fff;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    content: "";
+    height: 0;
+    right: 10px;
+    position: absolute;
+    top: -11px;
+    width: 0;
+}
+.menu-profile > * {
+    background-color: #fff;
+    position: relative;
+    text-align: left;
+}
+.menu-profile .nr {
+    padding: 5px;
+}
+.menu-profile .nr label.title {
+    font-size: 14px;
+    padding: 0;
+    text-align: center;
+}
+span.hiMessage {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: none;
+}
+.menu-profile .userProfileDropdown a {
+    display: block;
+    font-size: 14px;
+    margin: 0;
+}
+.menu-profile .nr .userProfileMyProfile {
+    background-color: #eee;
+    margin: 0 5px;
+}
+.menu-profile .userProfileDropdown .nopad a {
+    margin: 0;
+}
+.userProfileDropdown .userProfileMyProfile > a:hover {
+    text-decoration: none;
+}
+.menu-profile .userProfileDropdown .nopad span {
+    background-color: #0c0;
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    padding: 0 5px;
+}
+img.userProfileImageSmall {
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    height: 40px;
+    margin: 0 5px 0 0;
+    width: 40px;
+}
+.myName, .myName:hover {
+    color: #777;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* *** dropdown register form *** */
+
+.menu-profile form .nr .col-xs-12,
+.menu-profile form .nr .col-xs-6 {
+    padding: 0 5px;
+}
+.menu-profile form .nr .col-xs-12 label {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.menu-profile form .nr .col-xs-12 label.title {
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 0;
+}
+.nr.userSubmit {
+    padding-bottom: 15px;
+}
+.nr.userSubmit > div > a:active {
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+}
+.userAgreement p {
+    background-color: #eee;
+    border: 1px solid #eee;
+    color: #999;
+    font-size: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+}
+.userAgreement p a.topLink {
+    color: #008cba;
+    font-size: 10px;
+    height: auto;
+    line-height: normal;
+    padding: 0;
+}
+.menu-profile .nr.forgetPassword {
+    padding: 0 5px;
+}
+.forgetPasswordText,
+.forgetPasswordText:hover,
+.forgetPasswordText:focus {
+    color: #f90;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.forgetPasswordText:hover,
+.forgetPasswordText:focus {
+    background-color: #f90;
+    color: #fff;
+}
+/* *** add new add btn *** */
+.top-bar-new-add-wrap-link {
+    font-size: 18px;
+    font-weight: bold;
+    height: 55px;
+    line-height: 53px;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+.top-bar-new-add-wrap-icon > * {
+    margin: 0 5px;
+}
