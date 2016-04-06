@@ -28,10 +28,10 @@ a:focus {
 /*
 
 colors :
-#90afc5 - light blue
 #336b87 - blue
 #2a3132 - darker blue / shadow blue
 #1fae66 - green
+#126637 - darker green
 #dbdbdb - light grey
 #eaeaea - lighter grey
 
@@ -120,6 +120,12 @@ colors :
     transition: padding-left 0.3s ease 0s;
 }
 
+/* ***  nano slider *** */
+
+.nano > .nano-pane {
+    width: 6px;
+}
+
 /* *** top bar *** */
 
 header.top-bar-wrap {
@@ -187,9 +193,9 @@ header.top-bar-wrap {
 }
 .search-submit-wrap:active {
     background-color: #fff/*#204d74*/
-    ;
+        ;
     border-color: #ccc/*#122b40*/
-    ;
+        ;
 }
 .search-submit-wrap .search-submit {
     background: transparent none repeat scroll 0 0;
@@ -401,6 +407,16 @@ img.userProfileImageSmall {
 
 /* *** sidebar style *** */
 
-.nano > .nano-pane {
-    width: 6px;
+.sidebar-head .nav-tabs {
+    border: medium none;
 }
+.sidebar-head .nav-tabs > li > a {
+    background-color: #336b87;
+    border: medium none;
+    border-radius: 50% !important;
+    color: #fff;
+    display: block;
+    margin: 10px;
+}
+
+

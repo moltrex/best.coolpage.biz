@@ -11,9 +11,11 @@
                     <div role="tabpanel" class="tab-pane" id="sidebar-filters-wrap">
                         <?php include 'view-sidebar-filter.php' ?>
                     </div>
+                    <!--
                     <div role="tabpanel" class="tab-pane" id="sidebar-tags-wrap">
                         <?php include 'view-sidebar-tags.php' ?>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
