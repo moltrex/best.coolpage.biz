@@ -28,7 +28,9 @@ a:focus {
 /*
 
 colors :
-#336b87 - blue
+
+#0fa5d6 - light blue  
+#0e7b9e - blue
 #2a3132 - darker blue / shadow blue
 #1fae66 - green
 #126637 - darker green
@@ -408,28 +410,82 @@ img.userProfileImageSmall {
 /* *** sidebar style *** */
 
 .sidebar-head .nav-tabs {
+/*    background-color: #2a3132;*/
     border: medium none;
 }
 .sidebar-head .nav-tabs > li.sidebar-head-item {
     height: 60px;
     float: left;
-    margin-left: 12px;
-    padding: 13px 7px 10px;
+    margin: 0 0 0 10px;
+    padding: 10px 7px;
     position: relative;
 }
+.sidebar-head .nav-tabs > li.sidebar-head-item:first-child {
+    margin-left: 10px;
+}
 .sidebar-head .nav-tabs > li.sidebar-head-item > a {
-    background-color: #336b87;
+    background-color: #0e7b9e;
     border: medium none;
     border-radius: 50% !important;
     color: #fff;
     display: block;
     font-size: 16px;
     height: 36px;
-    margin: 10px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
     width: 36px;
 }
+.sidebar-head .nav-tabs > li.sidebar-head-category a:hover {
+    background-color: #fff;
+    color: #0e7b9e;
+}
 .sidebar-head .nav-tabs > li.sidebar-head-filter a {
-    background-color: #1fae66;
+    background-color: #EAA400;
+}
+.sidebar-head .nav-tabs > li.sidebar-head-filter a:hover {
+    background-color: #fff;
+    color: #EAA400;
+}
+
+/* *** sidebar tags *** */
+
+.sidebar-tags {
+    background-color: #126637;
+    padding: 10px;
+}
+
+.tag-words-q {
+    display: inline-block;
+    margin: 3px 6px 3px 0;
+    padding: 11px 0;
+    position: relative;
+    vertical-align: bottom;
+    width: 22px;
+}
+.tag-words-q i {
+    color: #eaeaea;
+    font-size: 24px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.search-tags-words {
+    background-color: #0e7b9e;
+    border: 1px solid #0fa5d6;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: none;
+    font-size: 11px;
+    margin: 3px 6px 3px 0;
+    padding: 3px 5px;
+    width: auto;
+}
+.search-tags-words.active {
+    background-color: #0fa5d6;
 }
 
 

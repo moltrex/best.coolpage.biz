@@ -12,6 +12,11 @@ var cob = {};
 
 //Sidebar transition
 $(function () {
+    if ($('.sidebar').hasClass('sidebar-toggle')) {
+        $('.sidebar-toggle-btn').css('color', '#dbdbdb');
+    } else {
+        $('.sidebar-toggle-btn').css('color', '#1fae66');
+    };
     $('.sidebar-toggle-btn').on('click', function () {
         $('.sidebar').toggleClass('sidebar-toggle').css('transition', 'all 0.3s ease 0s');
         if ($('.sidebar').hasClass('sidebar-toggle')) {
