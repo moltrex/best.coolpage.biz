@@ -410,13 +410,26 @@ img.userProfileImageSmall {
 .sidebar-head .nav-tabs {
     border: medium none;
 }
-.sidebar-head .nav-tabs > li > a {
+.sidebar-head .nav-tabs > li.sidebar-head-item {
+    height: 60px;
+    float: left;
+    margin-left: 12px;
+    padding: 13px 7px 10px;
+    position: relative;
+}
+.sidebar-head .nav-tabs > li.sidebar-head-item > a {
     background-color: #336b87;
     border: medium none;
     border-radius: 50% !important;
     color: #fff;
     display: block;
+    font-size: 16px;
+    height: 36px;
     margin: 10px;
+    width: 36px;
+}
+.sidebar-head .nav-tabs > li.sidebar-head-filter a {
+    background-color: #1fae66;
 }
 
 
