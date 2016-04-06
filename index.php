@@ -7,7 +7,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>test site</title>
 
-        <?php include 'include/view/vew-css.php' ?>
+        <?php include 'include/view/view-css.php' ?>
 
     </head>
     <body>
@@ -15,7 +15,7 @@
             <?php include 'include/view/view-header.php' ?>
             <?php include 'include/view/sidebar/view-sidebar-master.php' ?>
             <div class="nr main-section">
-                a
+                aasd
 
             </div>
         </div>
