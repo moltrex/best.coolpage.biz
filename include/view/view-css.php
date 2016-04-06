@@ -1,11 +1,11 @@
 <!-- Bootstrap -->
-<link href="include/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- FontAwesome 4.5.0 -->
-<link href="include/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="assets/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
 <!-- Nano Scroller css -->
-<link href="include/nanoScrollerJS-master/bin/css/nanoscroller.css" rel="stylesheet">
+<link href="assets/nanoScrollerJS-master/bin/css/nanoscroller.css" rel="stylesheet">
 
 <!-- Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
