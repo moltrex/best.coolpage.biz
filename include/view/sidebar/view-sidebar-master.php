@@ -8,14 +8,15 @@
                     <div role="tabpanel" class="tab-pane active" id="sidebar-category-wrap">
                         <?php include 'view-sidebar-category.php' ?>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="sidebar-filters-wrap">
-                        <?php include 'view-sidebar-filter.php' ?>
+                    <div role="tabpanel" class="tab-pane" id="sidebar-service-wrap">
+                        <?php include 'view-sidebar-service.php' ?>
                     </div>
-                    <!--
-                    <div role="tabpanel" class="tab-pane" id="sidebar-tags-wrap">
-                        <?php include 'view-sidebar-tags.php' ?>
+                    <div role="tabpanel" class="tab-pane" id="sidebar-jobs-wrap">
+                        <?php include 'view-sidebar-jobs.php' ?>
                     </div>
-                    -->
+                    <div role="tabpanel" class="tab-pane" id="sidebar-promo-wrap">
+                        <?php include 'view-sidebar-promo.php' ?>
+                    </div>
                 </div>
             </div>
         </div>

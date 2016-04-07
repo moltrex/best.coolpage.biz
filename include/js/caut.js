@@ -7,8 +7,10 @@ $(function () {
     });
 });
 
+
 //Frontend design opbject
 var cob = {};
+
 
 //Sidebar transition
 $(function () {
@@ -29,6 +31,7 @@ $(function () {
 
 });
 
+
 //Sidebar nanoScroller height
 cob.nSH = function () {
     cob.sideNavTavHeight = $('.sidebar-head').outerHeight();
@@ -46,5 +49,23 @@ $(window).on('resize', function () {
     return cob.nSH()
 });
 
+
 // Activating nano scrollbar
 $('.nano').nanoScroller();
+
+
+// Activate Jquery Collapse
+$(function() {
+    cob.allPanels = $('.collapse-content').hide();
+
+    $('.collapse-head').click(function() {
+        if($(this).next('.collapse-content').hasClass('collapsed')){
+            $(this).next('.collapse-content').slideUp().removeClass('collapsed');
+            return false;
+        }else{
+            cob.allPanels.slideUp().removeClass('collapsed');
+            $(this).next('.collapse-content').slideDown().addClass('collapsed');
+            return false;    
+        };  
+    });
+});
