@@ -1,0 +1,12 @@
+/*
+
+colors :
+#0fa5d6 - light blue  
+#0e7b9e - blue
+#2a3132 - darker blue / shadow blue
+#1fae66 - green
+#126637 - darker green
+#dbdbdb - light grey
+#eaeaea - lighter grey
+
+*/

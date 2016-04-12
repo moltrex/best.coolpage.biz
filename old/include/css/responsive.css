@@ -1,0 +1,23 @@
+/* Large desktop - lg */
+@media (min-width: 1200px) { ... }
+
+/* Portrait tablet to landscape and desktop - md */
+@media (min-width: 768px) and (max-width: 979px) { 
+ .top-user-register-text, .top-bar-new-add-wrap-link-text {
+  display: none;
+ }
+}
+
+/* Landscape phone to portrait tablet - sm */
+@media (max-width: 767px) { 
+ .top-user-register-text, .top-bar-new-add-wrap-link-text {
+  display: none;
+ }
+}
+
+/* Landscape phones and down - xs */
+@media (max-width: 480px) { 
+ .top-user-register-text, .top-bar-new-add-wrap-link-text {
+  display: none;
+ }
+}
