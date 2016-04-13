@@ -86,7 +86,7 @@
                                 <div class="nano">
                                     <div class="nano-content"> 
                                         <div class="row search-tags">
-                                            <span class="tag-words-q" data-original-title="Tag words folosite pentru a ajuta la o cautare mai rapida. Acestea se schimba in functie de categoria aleasa." data-toggle="tooltip" data-placement="bottom"><i class="fa fa-question-circle"></i></span>
+                                            <!--<span class="tag-words-q" data-original-title="Tag words folosite pentru a ajuta la o cautare mai rapida. Acestea se schimba in functie de categoria aleasa." data-toggle="tooltip" data-placement="bottom"><i class="fa fa-question-circle"></i></span>-->
                                             <span class="search-tags-words">cumpar</span>
                                             <span class="search-tags-words">vand</span>
                                             <span class="search-tags-words">schimb</span>

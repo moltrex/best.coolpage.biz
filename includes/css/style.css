@@ -605,7 +605,7 @@ a.menu-category-btn:hover, a.menu-category-btn:focus, a.menu-category-btn:active
     font-size: 12px;
 }
 .dropdown-filters-wrap {
-    margin-top: -25px;
+    margin-top: -140px;
     position: absolute;
     top: 100%;
 }
