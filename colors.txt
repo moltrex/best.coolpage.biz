@@ -1,0 +1,3 @@
+gradient colors
+
+#cfe7fa - #6393c1 - 0.7 opacity
