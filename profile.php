@@ -1121,16 +1121,48 @@
                                 <div class="col-xs-1 col-sm-2 prf-msg-chk">
                                     <input type="checkbox" /> 
                                 </div>
-                                <div class="col-xs-11 col-sm-12 prf-msg-date">
+                                <div class="col-xs-10 col-sm-11 prf-msg-date">
                                     <span>20 Oct</span>
                                 </div>
+                                <div class="col-xs-1 col-sm-1 prf-msg-toggle">
+                                    <a href="javascript:;" class="prf-msg-toggle-link" data-placement="bottom" data-toggle="tooltip" data-original-title="Vezi conversatia.">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </a>
+                                </div>
 
+                                <div class="col-xs-12 col-sm-12 prf-msg-text-wrap">
+                                    <div class="row prf-msg-text-original">
+                                        <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
+                                        <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
+                                        <p>Ma poti suna si la numarul 0700 000 000</p>
 
+                                        <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>
+                                    </div>
+                                    <div class="row prf-msg-text-section">
+                                        <div class="col-xs-12 prf-msg-text-user">
+                                            <div class="row userProfileMyProfile">
+                                                <a href="profile.php">
+                                                    <img src="includes/userpic/avatar/avatar.png" class="userProfileImageSmall" alt="">
+                                                    <span class="myName">iluca silviu gabriel</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                        <div class="col-xs-12 prf-msg-text-message">
+                                            <p>Da avem disponibil. </p>    
+                                            <p>Nu e nici o problema te sun eu si iti explic exact. </p>   
 
-                                <div class="col-xs-12 col-sm-12 prf-msg-text">
-                                    <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
-                                    <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
-                                    <p>Ma poti suna si la numarul 0700 000 000</p>
+                                            <!-- <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="javascript:;" class="btn btn-success prf-msg-reply">trimite mesaj</a>
+                                <div class="row prf-msg-reply-wrap">
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="prf-msg-reply-text">Mesajul tau</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                        </div>    
+                                    </form>
                                 </div>
                             </div>
                             <div class="row prf-msg-row">
