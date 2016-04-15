@@ -85,6 +85,7 @@ $(function(){
 }); 
 
 //Hide category and filter dropdown on location or search input
+
 $(function(){
     $('.search-location-text, .search-btn-text').on('focus', function(){
         $('.dropdown-category-wrap, .dropdown-filters-wrap').addClass('hidden');
@@ -94,26 +95,25 @@ $(function(){
 
 //Put  "ads boxes"  on the midle of the page
 
-cob.hProdAlign = function() {
-    cob.hProdWidth = $('.gp-list-item').outerWidth();
-    cob.hProdParentWidth = $('.gp-list-item').parent().width();
-    cob.hProdDif = cob.hProdParentWidth - [cob.hProdWidth * Math.floor(cob.hProdParentWidth / cob.hProdWidth)];
-    cob.hProdMarg = Math.floor(cob.hProdDif / [2 * Math.floor(cob.hProdParentWidth / cob.hProdWidth)]);
-    cob.pProdMarg = (cob.hProdDif - [Math.floor(cob.hProdParentWidth / cob.hProdWidth) * cob.hProdMarg * 2]) / 2;
+cob.gpListAlign = function() {
+    cob.gpItemMargin = parseInt($('.gp-list-item').css('margin-right'));
+    cob.gpItemWidth = $('.gp-list-item').outerWidth();
+    cob.gpParentItemWidth = $('.gp-list-item').parent().outerWidth();
+    
+    cob.gpParentPadding = (cob.gpParentItemWidth - ((cob.gpItemWidth + (cob.gpItemMargin * 2)) * Math.floor(cob.gpParentItemWidth / (cob.gpItemWidth + (cob.gpItemMargin * 2))))) / 2;
 
-    $('.gp-list-item').css('margin-left', cob.hProdMarg);
-    $('.gp-list-item').css('margin-right', cob.hProdMarg);
-    $('.gp-list-item').parent().css('padding-left', cob.pProdMarg);
-    $('.gp-list-item').parent().css('padding-right', cob.pProdMarg);
+    $('.gp-list-item').parent().css('padding-left', cob.gpParentPadding);
+    //$('.gp-list-item').parent().css('padding-right', cob.gpParentPadding);
 };
 
-$(document).ready(cob.hProdAlign());
+$(document).ready(cob.gpListAlign());
 $(window).resize(function () {
-    return cob.hProdAlign()
+    return cob.gpListAlign();
 });
 
 
 //Reduce the number of characters in gp-list-item title
+
 $(function(){
     $('.gp-title-text').each(function() {
         cob.gplto = $(this);
@@ -122,6 +122,7 @@ $(function(){
 });
 
 //Reduce the number of characters in gp-location-text title
+
 $(function(){
     $('.gp-location-text').each(function() {
         cob.gplto = $(this);
@@ -289,5 +290,25 @@ var cropbox = function(options){
     return obj;
 };
 
+// profile messages show / hide
 
+$(function(){
+    $('.prf-msg-toggle-link').on('click', function(){  
+        
+        $(this).parent().next('.prf-msg-text-wrap').toggleClass('active');
+    });
+});
+
+// profile messages reply show / hide
+
+$(function(){
+    $('.prf-msg-reply').on('click', function(){
+        $(this).toggleClass('active');    
+        $(this).next('.prf-msg-reply-wrap').toggleClass('active');    
+    });
+    $('.prf-msg-reply-cancel').on('click', function(){
+        $(this).closest('.prf-msg-reply-wrap').toggleClass('active');
+        $(this).closest('.prf-msg-text-wrap').children('.prf-msg-reply').toggleClass('active');
+    });
+});
 

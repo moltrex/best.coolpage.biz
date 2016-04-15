@@ -818,7 +818,7 @@ a.menu-category-btn:hover, a.menu-category-btn:focus, a.menu-category-btn:active
     height: 315px;
     margin: 10px 5px;
     position: relative;
-    width: 220px;
+    width: 200px;
 }
 .gp-list-item.featured, .gp-list-item.featured:hover {
     -moz-box-shadow: 0 0 0 3px #337ab7;
@@ -1223,7 +1223,7 @@ button.prf-image-edit {
 }
 .pref-user-adds-filters {
     padding: 0 15px 5px;
-    text-align: left;
+    text-align: center;
 }
 .pref-user-adds-filters > * {
     background-color: transparent;
@@ -1272,9 +1272,24 @@ button.prf-image-edit {
     padding-left: 0;
     text-align: right;
 }
+.prf-msg-toggle-link {
+    display: inline-block;
+    text-align: center;
+    width: 10px;
+}
+.prf-msg-text-wrap {
+	display: none;
+}
+.prf-msg-text-wrap.active {
+    display: block;
+}
 .prf-msg-text-wrap p {
     font-size: 12px;
     margin: 0;
+}
+.prf-msg-text-title > span {
+    font-size: 16px;
+    font-weight: bold;
 }
 .prf-msg-text-original {
     border-bottom: 1px solid #ddd;
@@ -1294,12 +1309,32 @@ button.prf-image-edit {
 .prf-msg-text-user {
     padding-bottom: 10px;
 }
-.prf-msg-reply {
+.prf-msg-reply.active {
     clear: both;
     display: inline-block;
     font-size: 12px;
     font-weight: bold;
-    margin: 5px 15px;
+    margin: 10px 0 0;
+}
+.prf-msg-reply {
+    display: none;
+}
+.prf-msg-reply-wrap {
+    background-color: #eaeaea;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    display: none;
+    margin: 15px 0;
+    padding: 15px;
+}
+.prf-msg-reply-wrap.active {
+    display: block;
+}
+.prf-msg-reply-send, .prf-msg-reply-cancel {
+    margin-top: 10px;
+}
+.prf-msg-reply-cancel {
+    margin-left: 10px;
 }
 .prf-user-about {
     background-color: #fff;

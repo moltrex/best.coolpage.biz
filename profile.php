@@ -76,7 +76,7 @@
                                         <span class="gp-checkbox-action">
                                             <input type="checkbox" name="reactiveaza-anunt">
                                         </span>
-                                        <a href="javascript:void(0)" class="gp-add-featured" data-placement="bottom" data-toggle="tooltip" data-original-title="Anunt featured">
+                                        <a href="javascript:void(0)" class="gp-add-featured" data-placement="bottom" data-toggle="tooltip" data-original-title="Anunt featured <?php echo '<br> salut'; ?> ">
                                             <i class="fa fa-diamond"></i>
                                         </a>
                                         <a href="javascript:void(0)" class="gp-add-edit" data-placement="bottom" data-toggle="tooltip" data-original-title="Click pentru a edita acest anunt.">
@@ -1115,6 +1115,9 @@
                                 <input type="submit" class="pref-user-delete-add" value="Sterge" />
                             </div>
                             <div class="row prf-msg-row">
+                                <div class="col-xs-12 prf-msg-text-title">
+                                    <span>Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</span>
+                                </div>
                                 <div class="col-xs-12 col-sm-10 prf-msg-from">
                                     <span>iluca.silviu@gmail.com</span> 
                                 </div>
@@ -1154,169 +1157,565 @@
                                             <!-- <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>-->
                                         </div>
                                     </div>
+                                    <a href="javascript:;" class="btn btn-success prf-msg-reply active">raspunde mesaj</a>
+                                    <div class="row prf-msg-reply-wrap">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="prf-msg-reply-label">Mesajul tau</label>
+                                                <textarea rows="4" cols="50" class="form-control prf-reply-text" value=""></textarea>
+                                            </div>    
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-success prf-msg-reply-send" value="trimite mesajul">
+                                                <a href="javascript:;" class="btn btn-default prf-msg-reply-cancel">anuleaza</a>
+
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                                <a href="javascript:;" class="btn btn-success prf-msg-reply">trimite mesaj</a>
-                                <div class="row prf-msg-reply-wrap">
-                                    <form class="form-horizontal">
-                                        <div class="form-group">
-                                            <label for="prf-msg-reply-text">Mesajul tau</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                        </div>    
-                                    </form>
-                                </div>
+
                             </div>
                             <div class="row prf-msg-row">
+                                <div class="col-xs-12 prf-msg-text-title">
+                                    <span>Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</span>
+                                </div>
                                 <div class="col-xs-12 col-sm-10 prf-msg-from">
                                     <span>iluca.silviu@gmail.com</span> 
                                 </div>
                                 <div class="col-xs-1 col-sm-2 prf-msg-chk">
                                     <input type="checkbox" /> 
                                 </div>
-                                <div class="col-xs-11 col-sm-12 prf-msg-date">
+                                <div class="col-xs-10 col-sm-11 prf-msg-date">
                                     <span>20 Oct</span>
                                 </div>
-
-
-
-                                <div class="col-xs-12 col-sm-12 prf-msg-text">
-                                    <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
-                                    <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
-                                    <p>Ma poti suna si la numarul 0700 000 000</p>
+                                <div class="col-xs-1 col-sm-1 prf-msg-toggle">
+                                    <a href="javascript:;" class="prf-msg-toggle-link" data-placement="bottom" data-toggle="tooltip" data-original-title="Vezi conversatia.">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </a>
                                 </div>
+
+                                <div class="col-xs-12 col-sm-12 prf-msg-text-wrap">
+                                    <div class="row prf-msg-text-original">
+                                        <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
+                                        <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
+                                        <p>Ma poti suna si la numarul 0700 000 000</p>
+
+                                        <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>
+                                    </div>
+                                    <div class="row prf-msg-text-section">
+                                        <div class="col-xs-12 prf-msg-text-user">
+                                            <div class="row userProfileMyProfile">
+                                                <a href="profile.php">
+                                                    <img src="includes/userpic/avatar/avatar.png" class="userProfileImageSmall" alt="">
+                                                    <span class="myName">iluca silviu gabriel</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                        <div class="col-xs-12 prf-msg-text-message">
+                                            <p>Da avem disponibil. </p>    
+                                            <p>Nu e nici o problema te sun eu si iti explic exact. </p>   
+
+                                            <!-- <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>-->
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" class="btn btn-success prf-msg-reply active">raspunde mesaj</a>
+                                    <div class="row prf-msg-reply-wrap">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="prf-msg-reply-label">Mesajul tau</label>
+                                                <textarea rows="4" cols="50" class="form-control prf-reply-text" value=""></textarea>
+                                            </div>    
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-success prf-msg-reply-send" value="trimite mesajul">
+                                                <a href="javascript:;" class="btn btn-default prf-msg-reply-cancel">anuleaza</a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="row prf-msg-row">
+                                <div class="col-xs-12 prf-msg-text-title">
+                                    <span>Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</span>
+                                </div>
                                 <div class="col-xs-12 col-sm-10 prf-msg-from">
                                     <span>iluca.silviu@gmail.com</span> 
                                 </div>
                                 <div class="col-xs-1 col-sm-2 prf-msg-chk">
                                     <input type="checkbox" /> 
                                 </div>
-                                <div class="col-xs-11 col-sm-12 prf-msg-date">
+                                <div class="col-xs-10 col-sm-11 prf-msg-date">
                                     <span>20 Oct</span>
                                 </div>
-
-
-
-                                <div class="col-xs-12 col-sm-12 prf-msg-text">
-                                    <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
-                                    <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
-                                    <p>Ma poti suna si la numarul 0700 000 000</p>
+                                <div class="col-xs-1 col-sm-1 prf-msg-toggle">
+                                    <a href="javascript:;" class="prf-msg-toggle-link" data-placement="bottom" data-toggle="tooltip" data-original-title="Vezi conversatia.">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </a>
                                 </div>
+
+                                <div class="col-xs-12 col-sm-12 prf-msg-text-wrap">
+                                    <div class="row prf-msg-text-original">
+                                        <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
+                                        <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
+                                        <p>Ma poti suna si la numarul 0700 000 000</p>
+
+                                        <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>
+                                    </div>
+                                    <div class="row prf-msg-text-section">
+                                        <div class="col-xs-12 prf-msg-text-user">
+                                            <div class="row userProfileMyProfile">
+                                                <a href="profile.php">
+                                                    <img src="includes/userpic/avatar/avatar.png" class="userProfileImageSmall" alt="">
+                                                    <span class="myName">iluca silviu gabriel</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                        <div class="col-xs-12 prf-msg-text-message">
+                                            <p>Da avem disponibil. </p>    
+                                            <p>Nu e nici o problema te sun eu si iti explic exact. </p>   
+
+                                            <!-- <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>-->
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" class="btn btn-success prf-msg-reply active">raspunde mesaj</a>
+                                    <div class="row prf-msg-reply-wrap">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="prf-msg-reply-label">Mesajul tau</label>
+                                                <textarea rows="4" cols="50" class="form-control prf-reply-text" value=""></textarea>
+                                            </div>    
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-success prf-msg-reply-send" value="trimite mesajul">
+                                                <a href="javascript:;" class="btn btn-default prf-msg-reply-cancel">anuleaza</a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="row prf-msg-row">
+                                <div class="col-xs-12 prf-msg-text-title">
+                                    <span>Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</span>
+                                </div>
                                 <div class="col-xs-12 col-sm-10 prf-msg-from">
                                     <span>iluca.silviu@gmail.com</span> 
                                 </div>
                                 <div class="col-xs-1 col-sm-2 prf-msg-chk">
                                     <input type="checkbox" /> 
                                 </div>
-                                <div class="col-xs-11 col-sm-12 prf-msg-date">
+                                <div class="col-xs-10 col-sm-11 prf-msg-date">
                                     <span>20 Oct</span>
                                 </div>
-
-
-
-                                <div class="col-xs-12 col-sm-12 prf-msg-text">
-                                    <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
-                                    <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
-                                    <p>Ma poti suna si la numarul 0700 000 000</p>
+                                <div class="col-xs-1 col-sm-1 prf-msg-toggle">
+                                    <a href="javascript:;" class="prf-msg-toggle-link" data-placement="bottom" data-toggle="tooltip" data-original-title="Vezi conversatia.">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </a>
                                 </div>
+
+                                <div class="col-xs-12 col-sm-12 prf-msg-text-wrap">
+                                    <div class="row prf-msg-text-original">
+                                        <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
+                                        <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
+                                        <p>Ma poti suna si la numarul 0700 000 000</p>
+
+                                        <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>
+                                    </div>
+                                    <div class="row prf-msg-text-section">
+                                        <div class="col-xs-12 prf-msg-text-user">
+                                            <div class="row userProfileMyProfile">
+                                                <a href="profile.php">
+                                                    <img src="includes/userpic/avatar/avatar.png" class="userProfileImageSmall" alt="">
+                                                    <span class="myName">iluca silviu gabriel</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                        <div class="col-xs-12 prf-msg-text-message">
+                                            <p>Da avem disponibil. </p>    
+                                            <p>Nu e nici o problema te sun eu si iti explic exact. </p>   
+
+                                            <!-- <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>-->
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" class="btn btn-success prf-msg-reply active">raspunde mesaj</a>
+                                    <div class="row prf-msg-reply-wrap">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="prf-msg-reply-label">Mesajul tau</label>
+                                                <textarea rows="4" cols="50" class="form-control prf-reply-text" value=""></textarea>
+                                            </div>    
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-success prf-msg-reply-send" value="trimite mesajul">
+                                                <a href="javascript:;" class="btn btn-default prf-msg-reply-cancel">anuleaza</a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="row prf-msg-row">
+                                <div class="col-xs-12 prf-msg-text-title">
+                                    <span>Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</span>
+                                </div>
                                 <div class="col-xs-12 col-sm-10 prf-msg-from">
                                     <span>iluca.silviu@gmail.com</span> 
                                 </div>
                                 <div class="col-xs-1 col-sm-2 prf-msg-chk">
                                     <input type="checkbox" /> 
                                 </div>
-                                <div class="col-xs-11 col-sm-12 prf-msg-date">
+                                <div class="col-xs-10 col-sm-11 prf-msg-date">
                                     <span>20 Oct</span>
                                 </div>
-
-
-
-                                <div class="col-xs-12 col-sm-12 prf-msg-text">
-                                    <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
-                                    <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
-                                    <p>Ma poti suna si la numarul 0700 000 000</p>
+                                <div class="col-xs-1 col-sm-1 prf-msg-toggle">
+                                    <a href="javascript:;" class="prf-msg-toggle-link" data-placement="bottom" data-toggle="tooltip" data-original-title="Vezi conversatia.">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </a>
                                 </div>
+
+                                <div class="col-xs-12 col-sm-12 prf-msg-text-wrap">
+                                    <div class="row prf-msg-text-original">
+                                        <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
+                                        <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
+                                        <p>Ma poti suna si la numarul 0700 000 000</p>
+
+                                        <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>
+                                    </div>
+                                    <div class="row prf-msg-text-section">
+                                        <div class="col-xs-12 prf-msg-text-user">
+                                            <div class="row userProfileMyProfile">
+                                                <a href="profile.php">
+                                                    <img src="includes/userpic/avatar/avatar.png" class="userProfileImageSmall" alt="">
+                                                    <span class="myName">iluca silviu gabriel</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                        <div class="col-xs-12 prf-msg-text-message">
+                                            <p>Da avem disponibil. </p>    
+                                            <p>Nu e nici o problema te sun eu si iti explic exact. </p>   
+
+                                            <!-- <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>-->
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" class="btn btn-success prf-msg-reply active">raspunde mesaj</a>
+                                    <div class="row prf-msg-reply-wrap">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="prf-msg-reply-label">Mesajul tau</label>
+                                                <textarea rows="4" cols="50" class="form-control prf-reply-text" value=""></textarea>
+                                            </div>    
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-success prf-msg-reply-send" value="trimite mesajul">
+                                                <a href="javascript:;" class="btn btn-default prf-msg-reply-cancel">anuleaza</a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="row prf-msg-row">
+                                <div class="col-xs-12 prf-msg-text-title">
+                                    <span>Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</span>
+                                </div>
                                 <div class="col-xs-12 col-sm-10 prf-msg-from">
                                     <span>iluca.silviu@gmail.com</span> 
                                 </div>
                                 <div class="col-xs-1 col-sm-2 prf-msg-chk">
                                     <input type="checkbox" /> 
                                 </div>
-                                <div class="col-xs-11 col-sm-12 prf-msg-date">
+                                <div class="col-xs-10 col-sm-11 prf-msg-date">
                                     <span>20 Oct</span>
                                 </div>
-
-
-
-                                <div class="col-xs-12 col-sm-12 prf-msg-text">
-                                    <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
-                                    <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
-                                    <p>Ma poti suna si la numarul 0700 000 000</p>
+                                <div class="col-xs-1 col-sm-1 prf-msg-toggle">
+                                    <a href="javascript:;" class="prf-msg-toggle-link" data-placement="bottom" data-toggle="tooltip" data-original-title="Vezi conversatia.">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </a>
                                 </div>
+
+                                <div class="col-xs-12 col-sm-12 prf-msg-text-wrap">
+                                    <div class="row prf-msg-text-original">
+                                        <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
+                                        <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
+                                        <p>Ma poti suna si la numarul 0700 000 000</p>
+
+                                        <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>
+                                    </div>
+                                    <div class="row prf-msg-text-section">
+                                        <div class="col-xs-12 prf-msg-text-user">
+                                            <div class="row userProfileMyProfile">
+                                                <a href="profile.php">
+                                                    <img src="includes/userpic/avatar/avatar.png" class="userProfileImageSmall" alt="">
+                                                    <span class="myName">iluca silviu gabriel</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                        <div class="col-xs-12 prf-msg-text-message">
+                                            <p>Da avem disponibil. </p>    
+                                            <p>Nu e nici o problema te sun eu si iti explic exact. </p>   
+
+                                            <!-- <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>-->
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" class="btn btn-success prf-msg-reply active">raspunde mesaj</a>
+                                    <div class="row prf-msg-reply-wrap">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="prf-msg-reply-label">Mesajul tau</label>
+                                                <textarea rows="4" cols="50" class="form-control prf-reply-text" value=""></textarea>
+                                            </div>    
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-success prf-msg-reply-send" value="trimite mesajul">
+                                                <a href="javascript:;" class="btn btn-default prf-msg-reply-cancel">anuleaza</a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="row prf-msg-row">
+                                <div class="col-xs-12 prf-msg-text-title">
+                                    <span>Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</span>
+                                </div>
                                 <div class="col-xs-12 col-sm-10 prf-msg-from">
                                     <span>iluca.silviu@gmail.com</span> 
                                 </div>
                                 <div class="col-xs-1 col-sm-2 prf-msg-chk">
                                     <input type="checkbox" /> 
                                 </div>
-                                <div class="col-xs-11 col-sm-12 prf-msg-date">
+                                <div class="col-xs-10 col-sm-11 prf-msg-date">
                                     <span>20 Oct</span>
                                 </div>
-
-
-
-                                <div class="col-xs-12 col-sm-12 prf-msg-text">
-                                    <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
-                                    <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
-                                    <p>Ma poti suna si la numarul 0700 000 000</p>
+                                <div class="col-xs-1 col-sm-1 prf-msg-toggle">
+                                    <a href="javascript:;" class="prf-msg-toggle-link" data-placement="bottom" data-toggle="tooltip" data-original-title="Vezi conversatia.">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </a>
                                 </div>
+
+                                <div class="col-xs-12 col-sm-12 prf-msg-text-wrap">
+                                    <div class="row prf-msg-text-original">
+                                        <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
+                                        <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
+                                        <p>Ma poti suna si la numarul 0700 000 000</p>
+
+                                        <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>
+                                    </div>
+                                    <div class="row prf-msg-text-section">
+                                        <div class="col-xs-12 prf-msg-text-user">
+                                            <div class="row userProfileMyProfile">
+                                                <a href="profile.php">
+                                                    <img src="includes/userpic/avatar/avatar.png" class="userProfileImageSmall" alt="">
+                                                    <span class="myName">iluca silviu gabriel</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                        <div class="col-xs-12 prf-msg-text-message">
+                                            <p>Da avem disponibil. </p>    
+                                            <p>Nu e nici o problema te sun eu si iti explic exact. </p>   
+
+                                            <!-- <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>-->
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" class="btn btn-success prf-msg-reply active">raspunde mesaj</a>
+                                    <div class="row prf-msg-reply-wrap">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="prf-msg-reply-label">Mesajul tau</label>
+                                                <textarea rows="4" cols="50" class="form-control prf-reply-text" value=""></textarea>
+                                            </div>    
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-success prf-msg-reply-send" value="trimite mesajul">
+                                                <a href="javascript:;" class="btn btn-default prf-msg-reply-cancel">anuleaza</a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="row prf-msg-row">
+                                <div class="col-xs-12 prf-msg-text-title">
+                                    <span>Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</span>
+                                </div>
                                 <div class="col-xs-12 col-sm-10 prf-msg-from">
                                     <span>iluca.silviu@gmail.com</span> 
                                 </div>
                                 <div class="col-xs-1 col-sm-2 prf-msg-chk">
                                     <input type="checkbox" /> 
                                 </div>
-                                <div class="col-xs-11 col-sm-12 prf-msg-date">
+                                <div class="col-xs-10 col-sm-11 prf-msg-date">
                                     <span>20 Oct</span>
                                 </div>
-
-
-
-                                <div class="col-xs-12 col-sm-12 prf-msg-text">
-                                    <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
-                                    <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
-                                    <p>Ma poti suna si la numarul 0700 000 000</p>
+                                <div class="col-xs-1 col-sm-1 prf-msg-toggle">
+                                    <a href="javascript:;" class="prf-msg-toggle-link" data-placement="bottom" data-toggle="tooltip" data-original-title="Vezi conversatia.">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </a>
                                 </div>
+
+                                <div class="col-xs-12 col-sm-12 prf-msg-text-wrap">
+                                    <div class="row prf-msg-text-original">
+                                        <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
+                                        <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
+                                        <p>Ma poti suna si la numarul 0700 000 000</p>
+
+                                        <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>
+                                    </div>
+                                    <div class="row prf-msg-text-section">
+                                        <div class="col-xs-12 prf-msg-text-user">
+                                            <div class="row userProfileMyProfile">
+                                                <a href="profile.php">
+                                                    <img src="includes/userpic/avatar/avatar.png" class="userProfileImageSmall" alt="">
+                                                    <span class="myName">iluca silviu gabriel</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                        <div class="col-xs-12 prf-msg-text-message">
+                                            <p>Da avem disponibil. </p>    
+                                            <p>Nu e nici o problema te sun eu si iti explic exact. </p>   
+
+                                            <!-- <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>-->
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" class="btn btn-success prf-msg-reply active">raspunde mesaj</a>
+                                    <div class="row prf-msg-reply-wrap">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="prf-msg-reply-label">Mesajul tau</label>
+                                                <textarea rows="4" cols="50" class="form-control prf-reply-text" value=""></textarea>
+                                            </div>    
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-success prf-msg-reply-send" value="trimite mesajul">
+                                                <a href="javascript:;" class="btn btn-default prf-msg-reply-cancel">anuleaza</a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="row prf-msg-row">
+                                <div class="col-xs-12 prf-msg-text-title">
+                                    <span>Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</span>
+                                </div>
                                 <div class="col-xs-12 col-sm-10 prf-msg-from">
                                     <span>iluca.silviu@gmail.com</span> 
                                 </div>
                                 <div class="col-xs-1 col-sm-2 prf-msg-chk">
                                     <input type="checkbox" /> 
                                 </div>
-                                <div class="col-xs-11 col-sm-12 prf-msg-date">
+                                <div class="col-xs-10 col-sm-11 prf-msg-date">
                                     <span>20 Oct</span>
                                 </div>
-
-
-
-                                <div class="col-xs-12 col-sm-12 prf-msg-text">
-                                    <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
-                                    <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
-                                    <p>Ma poti suna si la numarul 0700 000 000</p>
+                                <div class="col-xs-1 col-sm-1 prf-msg-toggle">
+                                    <a href="javascript:;" class="prf-msg-toggle-link" data-placement="bottom" data-toggle="tooltip" data-original-title="Vezi conversatia.">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </a>
                                 </div>
+
+                                <div class="col-xs-12 col-sm-12 prf-msg-text-wrap">
+                                    <div class="row prf-msg-text-original">
+                                        <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
+                                        <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
+                                        <p>Ma poti suna si la numarul 0700 000 000</p>
+
+                                        <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>
+                                    </div>
+                                    <div class="row prf-msg-text-section">
+                                        <div class="col-xs-12 prf-msg-text-user">
+                                            <div class="row userProfileMyProfile">
+                                                <a href="profile.php">
+                                                    <img src="includes/userpic/avatar/avatar.png" class="userProfileImageSmall" alt="">
+                                                    <span class="myName">iluca silviu gabriel</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                        <div class="col-xs-12 prf-msg-text-message">
+                                            <p>Da avem disponibil. </p>    
+                                            <p>Nu e nici o problema te sun eu si iti explic exact. </p>   
+
+                                            <!-- <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>-->
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" class="btn btn-success prf-msg-reply active">raspunde mesaj</a>
+                                    <div class="row prf-msg-reply-wrap">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="prf-msg-reply-label">Mesajul tau</label>
+                                                <textarea rows="4" cols="50" class="form-control prf-reply-text" value=""></textarea>
+                                            </div>    
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-success prf-msg-reply-send" value="trimite mesajul">
+                                                <a href="javascript:;" class="btn btn-default prf-msg-reply-cancel">anuleaza</a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
+                            <div class="row prf-msg-row">
+                                <div class="col-xs-12 prf-msg-text-title">
+                                    <span>Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</span>
+                                </div>
+                                <div class="col-xs-12 col-sm-10 prf-msg-from">
+                                    <span>iluca.silviu@gmail.com</span> 
+                                </div>
+                                <div class="col-xs-1 col-sm-2 prf-msg-chk">
+                                    <input type="checkbox" /> 
+                                </div>
+                                <div class="col-xs-10 col-sm-11 prf-msg-date">
+                                    <span>20 Oct</span>
+                                </div>
+                                <div class="col-xs-1 col-sm-1 prf-msg-toggle">
+                                    <a href="javascript:;" class="prf-msg-toggle-link" data-placement="bottom" data-toggle="tooltip" data-original-title="Vezi conversatia.">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 prf-msg-text-wrap">
+                                    <div class="row prf-msg-text-original">
+                                        <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
+                                        <p>Eu abia am venit in Iasi si nu prea ma pricep pe unde sunt toate locatiile.</p>
+                                        <p>Ma poti suna si la numarul 0700 000 000</p>
+
+                                        <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>
+                                    </div>
+                                    <div class="row prf-msg-text-section">
+                                        <div class="col-xs-12 prf-msg-text-user">
+                                            <div class="row userProfileMyProfile">
+                                                <a href="profile.php">
+                                                    <img src="includes/userpic/avatar/avatar.png" class="userProfileImageSmall" alt="">
+                                                    <span class="myName">iluca silviu gabriel</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                        <div class="col-xs-12 prf-msg-text-message">
+                                            <p>Da avem disponibil. </p>    
+                                            <p>Nu e nici o problema te sun eu si iti explic exact. </p>   
+
+                                            <!-- <a href="javascript:;" class="download-file">Download file: rezume.pdf</a>-->
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" class="btn btn-success prf-msg-reply active">raspunde mesaj</a>
+                                    <div class="row prf-msg-reply-wrap">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="prf-msg-reply-label">Mesajul tau</label>
+                                                <textarea rows="4" cols="50" class="form-control prf-reply-text" value=""></textarea>
+                                            </div>    
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-success prf-msg-reply-send" value="trimite mesajul">
+                                                <a href="javascript:;" class="btn btn-default prf-msg-reply-cancel">anuleaza</a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                           
                         </div>
                         <div role="tabpanel" class="tab-pane" id="prf-user-about">
                             <div class="row prf-user-about">
