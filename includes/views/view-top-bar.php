@@ -53,7 +53,7 @@
                                        id="userSubmit userLogin">
                             </div>
                             <div class="col-xs-6">
-                                <a class="btn userRegisterLink" href="#">Inregistrare</a>
+                                <a class="btn userRegisterLink" href="javascript:;">Inregistrare</a>
                             </div>
                         </div>
                         <div class="row">
@@ -63,12 +63,12 @@
                         </div>
                         <div class="row forgetPassword">
                             <div class="col-xs-12">
-                                <a href="#" class="forgetPasswordText"><i class="fa fa-bed"></i> Am uitat parola!</a>
+                                <a href="javascript:;" class="forgetPasswordText"><i class="fa fa-bed"></i> Am uitat parola!</a>
                             </div>
                         </div>
 
                     </form>
-                    <form action="" class="formRegister">
+                    <form action="" class="formRegister hidden">
                         <div class="row">
                             <div class="col-xs-12">
                                 <label class="title">Creare cont</label>
@@ -129,7 +129,7 @@
                             </div>
                         </div>
                     </form>
-                    <div class="row userProfileDropdown hidden">
+                    <div class="row userProfileDropdown">
                         <div class="row">
                             <div class="col-xs-12">
                                 <label class="title"><span class="hiMessage">Bun venit,</span></label>
@@ -149,7 +149,7 @@
                         </div>
                         <div class="row nopad userProfileDropdownHelp">
                             <div class="col-xs-12">
-                                <a href="#">Ai nevoie de ajutor?</a>
+                                <a href="javascript:;">Ai nevoie de ajutor?</a>
                             </div>
                         </div>
                         <div class="row">
@@ -157,21 +157,10 @@
                         </div>
                         <div class="row nopad userProfileDropdownMesajeAlerte">
                             <div class="col-xs-10">
-                                <a href="#">Mesaje sau Alerte </a>
+                                <a href="profile-inbox.php">Mesaje sau Alerte </a>
                             </div>
                             <div class="col-xs-2">
                                 <span href="" class="userProfileAlertNumber pull-right">0</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="divider borderGrey"></div>
-                        </div>
-                        <div class="row nopad userProfileFavourites">
-                            <div class="col-xs-10">
-                                <a href="#">Favorite</a>
-                            </div>
-                            <div class="col-xs-2">
-                                <span href="" class="userProfileAlertNumber pull-right">5</span>
                             </div>
                         </div>
                         <div class="row">

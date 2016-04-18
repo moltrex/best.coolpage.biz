@@ -1163,7 +1163,7 @@ button.prf-image-edit {
     top: 0;
     width: 100%;
 }
-.prf-image-wrap:hover + .button.prf-image-edit, .button.prf-image-edit:hover {
+.prf-image-wrap img:hover + .button.prf-image-edit, .button.prf-image-edit:hover {
     display: block;
 }
 .prf-user-pref {
@@ -1204,13 +1204,13 @@ button.prf-image-edit {
     display: inline-block;
     float: none;
 }
-.prf-user-menu .nav-tabs > li > a {
+.prf-user-menu .nav > li > a {
     border: medium none;
     color: #333;
     font-size: 14px;
     font-weight: 600;
 }
-.prf-user-menu .nav-tabs > li > a:hover, .prf-user-menu .nav-tabs > li > a:focus, .prf-user-menu .nav-tabs > li.active > a, .prf-user-menu .nav-tabs > li.active > a:hover {
+.prf-user-menu .nav > li > a:hover, .prf-user-menu .nav > li > a:focus, .prf-user-menu .nav > li.active > a, .prf-user-menu .nav > li.active > a:hover {
     background-color: transparent;
     border: none;
     color: #337ab7;
@@ -1309,7 +1309,7 @@ button.prf-image-edit {
 .prf-msg-text-user {
     padding-bottom: 10px;
 }
-.prf-msg-reply.active {
+.prf-msg-reply.toggle {
     clear: both;
     display: inline-block;
     font-size: 12px;
@@ -1329,6 +1329,9 @@ button.prf-image-edit {
 }
 .prf-msg-reply-wrap.active {
     display: block;
+}
+.prf-msg-file-upload {
+    margin: 10px 0 0;
 }
 .prf-msg-reply-send, .prf-msg-reply-cancel {
     margin-top: 10px;
