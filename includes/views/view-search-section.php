@@ -3,10 +3,11 @@
         <div class="row search-zone-wrap">
             <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 search-btn-wrap">
                 <div class="input-group input-group-lg"> 
+                    <input type="text" class="form-control search-btn-text" placeholder="Cautarea incepe aici ..." aria-describedby="search-btn-prefix">
                     <span class="input-group-addon search-btn-prefix" id="search-btn-prefix">
                         <i class="fa fa-search"></i>
+                        <input type="submit" value="cauta" class="search-btn-submit" />
                     </span>
-                    <input type="text" class="form-control search-btn-text" placeholder="Cautarea incepe aici ..." aria-describedby="search-btn-prefix">
                 </div>
             </div> 
         </div>

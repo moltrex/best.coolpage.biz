@@ -10,7 +10,9 @@ $(function(){
 //Frontend design opbject
 var cob = {};
 
+
 // Menu register login vizibility
+
 $(function(){
     $('.menu-profile-btn').click(function(){
         $('.menu-profile').toggleClass('visible');
@@ -26,7 +28,9 @@ $(function(){
     });
 });
 
+
 // Location Dropdown
+
 $(function(){
     $('.search-location-cancel-btn, .search-location-list-item').click(function(){
         $('.search-location-text').val("");
@@ -46,7 +50,9 @@ $(function(){
     });
 });
 
+
 // Search zone wrap background 
+
 $(function(){
     $('.filters-zone-wrap').css('background-image', function(){
         cob.szbi = 1 + Math.floor(Math.random() * 5);    
@@ -54,7 +60,9 @@ $(function(){
     });
 });
 
+
 // Show / hide category dropdown  
+
 $(function(){
     $('.menu-category-btn').click(function(){
         $('.dropdown-filters-wrap').addClass('hidden');
@@ -69,7 +77,9 @@ $(function(){
     });
 });
 
+
 // Show / hide filter dropdown     
+
 $(function(){
     $('.filters-category-btn').click(function(){
         $('.dropdown-category-wrap').addClass('hidden');
@@ -104,7 +114,7 @@ cob.gpListAlign = function() {
 
     $('.gp-list-item').parent().css('padding-left', cob.gpParentPadding);
     $('.gp-list-item').parent().css('padding-right', cob.gpParentPadding);
-    
+
 };
 
 $(document).ready(cob.gpListAlign());
@@ -133,7 +143,9 @@ $(function(){
     });
 });
 
+
 //Hide small add box on click
+
 $(function(){
     $('.gp-add-hide').on('click', function(){
         cob.addhidefirstP = $(this).parent();
@@ -142,8 +154,10 @@ $(function(){
     });
 });
 
+
 //Cropbox for avatar
 /**  Created by ezgoing on 14/9/2014. **/
+
 'use strict';
 var cropbox = function(options){
     var el = document.querySelector(options.imageBox),
@@ -291,14 +305,16 @@ var cropbox = function(options){
     return obj;
 };
 
+
 // profile messages show / hide
 
 $(function(){
     $('.prf-msg-toggle-link').on('click', function(){  
-
         $(this).parent().next('.prf-msg-text-wrap').toggleClass('active');
+        $(this).parent().closest('.prf-msg-text-title').addClass('prf-msg-read');
     });
 });
+
 
 // profile messages reply show / hide
 
@@ -314,5 +330,41 @@ $(function(){
 });
 
 
+// profile user about edit show
 
+$(function(){
+    $('.prf-user-usefull-edit').on('click', function(){
+        $(this).parent().addClass('editable-section');
+    });
+});
+
+// profile user about description cancel
+
+$(function(){
+    $('.prf-user-about-text-cancel').on('click', function(){
+        $(this).closest('.editable-section').removeClass('editable-section');
+    });
+});
+
+
+//profile user about add personal group links
+
+$(function(){
+    
+    $(document).on('click','.prf-user-usefull-add-group', function(){
+        cob.usefullLinkClone = $(this).closest('.prf-user-usefull-form-group').clone();
+        // console.log('a');
+        $(this).closest('.prf-user-usefull-form-group').after(cob.usefullLinkClone);
+    });
+});
+
+
+//profile user about delete personal group links
+
+$(function(){
+    $('.prf-user-usefull-remove-group').on('click', function(){
+        console.log('a');
+        $(this).closest('.prf-user-usefull-form-group').remove();
+    });
+});
 

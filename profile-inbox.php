@@ -28,7 +28,7 @@
                             <input type="submit" class="pref-user-delete-add" value="Sterge" />
                         </div>
                         <div class="row prf-msg-row">
-                            <div class="col-xs-12 prf-msg-text-title">
+                            <div class="col-xs-12 prf-msg-text-title prf-msg-read">
                                 <span>Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</span>
                             </div>
                             <div class="col-xs-12 col-sm-10 prf-msg-from">

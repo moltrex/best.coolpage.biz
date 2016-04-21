@@ -59,8 +59,9 @@ a, a:hover {
     line-height: 1.5;
     padding: 5px 10px;
 }
-.form-horizontal .form-group {
-    margin: 0;
+.alert-danger {
+    padding: 5px;
+    margin: 5px 0;
 }
 .site-wrap {
     min-height: 100%;
@@ -436,6 +437,18 @@ img.userProfileImageSmall {
     border-right: none !important;
     background-color: #4cae4c;
     color: #fff;
+    position: relative;
+}
+.search-btn-submit {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -999px;
+    top: 0;
+    width: 100%;
 }
 .search-btn-text {
     border-left: none !important;
@@ -1291,6 +1304,9 @@ button.prf-image-edit {
     font-size: 16px;
     font-weight: bold;
 }
+.prf-msg-text-title.prf-msg-read > span {
+    font-weight: normal;
+}
 .prf-msg-text-original {
     border-bottom: 1px solid #ddd;
     padding: 0 0 10px;
@@ -1324,7 +1340,7 @@ button.prf-image-edit {
     border-bottom: 1px solid #dbdbdb;
     border-top: 1px solid #dbdbdb;
     display: none;
-    margin: 15px 0;
+    margin: 0 0 15px;
     padding: 15px;
 }
 .prf-msg-reply-wrap.active {
@@ -1348,14 +1364,91 @@ button.prf-image-edit {
     padding: 15px;
 }
 .prf-user-about > div {
-    padding: 10px 0;
+    padding: 20px;
 }
-.prf-user-about > div.pref-user-social > label {
-    float: left;
+.prf-user-edit-form {
+    display: none;
+}
+.prf-user-about > div:hover {
+    background-color: aliceblue;
+}
+.prf-user-about > div.editable-section:hover {
+    background-color: transparent;
+}
+.prf-user-about > div:hover .prf-user-usefull-edit {
+    display: block;
+}
+.prf-user-usefull-edit {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.prf-user-about > div.editable-section .prf-user-active,
+.prf-user-about > div.editable-section:hover .prf-user-usefull-edit {
+    display: none;
+}
+.prf-user-about > div.editable-section .prf-user-edit-form {
+    display: block;
+}
+.prf-user-notext {
+    color: #eaeaea;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
     width: 100%;
 }
-.prf-user-about > div.pref-user-social > div.pref-user-social-link {
+.prf-user-about-text {
+    min-height: 250px;
+}
+.prf-user-usefull-links-row {
+    line-height: 25px;
+}
+.prf-user-about-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.prf-user-about-edit-text {
+    min-height: 150px;
+    max-width: 100%;
+}
+.prf-user-social-link {
     float: left;
     margin: 0 10px 0 0;
     width: auto;
 }
+.prf-user-social-link > a {
+    color: #999;
+    font-size: 30px;
+}
+.prf-user-usefull-links-label {
+    color: #999;
+    font-size: 13px;
+}
+.prf-user-usefull-add-group, .prf-user-usefull-add-group:hover, .prf-user-usefull-add-group:focus {
+    color: #5cb85c;
+    font-size: 25px;
+    line-height: 34px;
+    text-decoration: none;
+}
+.prf-user-usefull-add-group:hover, .prf-user-usefull-add-group:focus {
+    color: #449d44;
+}
+.prf-user-usefull-remove-group, .prf-user-usefull-remove-group:hover, .prf-user-usefull-remove-group:focus {
+    color: #a94442;
+    font-size: 25px;
+    line-height: 34px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+.prf-user-usefull-remove-group:hover, .prf-user-usefull-remove-group:focus {
+    color: #a94442; 
+}
+
+
+
