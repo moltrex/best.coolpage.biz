@@ -150,6 +150,32 @@ a, a:hover {
     padding: 15px 0;
     text-align: left;
 }
+.gp-edit-avatar-wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.gp-add-new-avatar-row {
+    margin: 10px 0;
+}
+.gp-add-new-avatar-row .btn-primary {
+	margin-right:5px;
+}
+.gp-preview-new-avatar-text {
+    color: #999;
+    display: block;
+    font-size: 12px;
+    margin: 25px auto;
+    text-align: center;
+    width: 80%;
+}
+.gp-preview-new-avatar .cropped {
+    border-radius: 50% !important;
+    height: 100px;
+    margin: 15px auto;
+    overflow: hidden;
+    text-align: center;
+    width: 100px;
+}
 .imageBox {
     position: relative;
     height: 300px;
@@ -169,7 +195,6 @@ a, a:hover {
     margin-top: -50px;
     margin-left: -50px;
     box-sizing: border-box;
-    border: 1px solid rgb(102, 102, 102);
     box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2);
     background: none repeat scroll 0% 0% transparent;
 }
@@ -1176,7 +1201,7 @@ button.prf-image-edit {
     top: 0;
     width: 100%;
 }
-.prf-image-wrap img:hover + .button.prf-image-edit, .button.prf-image-edit:hover {
+.prf-image-wrap img:hover + button.prf-image-edit, button.prf-image-edit:hover {
     display: block;
 }
 .prf-user-pref {
@@ -1392,13 +1417,13 @@ button.prf-image-edit {
     display: block;
 }
 .prf-user-notext {
-    color: #eaeaea;
+    color: #ccc;
     display: block;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 800;
-    line-height: 30px;
-    margin: 10px 0;
-    text-align: center;
+    line-height: 24px;
+    margin: 10px auto;
+    text-align: left;
     text-transform: uppercase;
     width: 100%;
 }
@@ -1422,7 +1447,7 @@ button.prf-image-edit {
     margin: 0 10px 0 0;
     width: auto;
 }
-.prf-user-social-link > a {
+.prf-user-social-link > * {
     color: #999;
     font-size: 30px;
 }

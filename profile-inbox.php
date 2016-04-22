@@ -72,7 +72,7 @@
                                 </div>
                                 <a href="javascript:;" class="btn btn-success prf-msg-reply toggle">raspunde mesaj</a>
                                 <div class="row prf-msg-reply-wrap">
-                                    <form class="form-horizontal">
+                                    <form>
                                         <div class="form-group">
                                             <label for="prf-msg-reply-label">Mesajul tau</label>
                                             <textarea rows="4" cols="50" class="form-control prf-reply-text" value=""></textarea>

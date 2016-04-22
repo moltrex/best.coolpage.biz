@@ -350,11 +350,16 @@ $(function(){
 //profile user about add personal group links
 
 $(function(){
-    
+    cob.usefullLinkNr = 0;
     $(document).on('click','.prf-user-usefull-add-group', function(){
-        cob.usefullLinkClone = $(this).closest('.prf-user-usefull-form-group').clone();
-        // console.log('a');
-        $(this).closest('.prf-user-usefull-form-group').after(cob.usefullLinkClone);
+
+        if(cob.usefullLinkNr < 4){
+            cob.usefullLinkGroup = $(this).closest('.prf-user-usefull-form-group').clone();
+            $(this).closest('.prf-user-usefull-form-group').after(cob.usefullLinkGroup);
+            cob.usefullLinkNr++;
+
+        };
+
     });
 });
 
@@ -362,9 +367,32 @@ $(function(){
 //profile user about delete personal group links
 
 $(function(){
-    $('.prf-user-usefull-remove-group').on('click', function(){
-        console.log('a');
-        $(this).closest('.prf-user-usefull-form-group').remove();
+
+    $(document).on('click','.prf-user-usefull-remove-group', function(){
+        if( cob.usefullLinkNr >= 1){
+            $(this).closest('.prf-user-usefull-form-group').remove();
+            cob.usefullLinkNr--;
+        };
+    });
+
+});
+
+
+//profile user about hide edit persoanl links
+
+$(function(){
+    $('.prf-user-about-usefull-cancel').on('click', function(){
+        $(this).closest('.editable-section').removeClass('editable-section');
     });
 });
+
+
+// profile user about hide social edit
+
+$(function(){
+    $('.prf-user-about-social-cancel').on('click', function(){
+        $(this).closest('.editable-section').removeClass('editable-section');
+    });
+});
+
 

@@ -85,13 +85,19 @@
                                     <div class="col-xs-12 col-sm-12">
                                         <p class="alert-danger hidden">Textul nu poate fi mai mare de 300 caractere!</p>    
                                     </div>
-                                </div>
 
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <input type="submit" value="salveaza linkuri" class="btn btn-success prf-user-about-useful-send">
+                                        <a class="btn btn-default prf-user-about-usefull-cancel" href="javascript:;">anuleaza</a>
+                                    </div>
+                                </div>
                             </form>
                             <span class="row prf-user-notext hidden">Utilizatorul nu a completat aceasta sectiune.</span>
                         </div>
 
-                        <div class="col-sm-6 col-xs-12 prf-user-social">
+                        <div class="col-sm-12 col-xs-12 prf-user-social">
                             <a href="javascript:;" class="prf-user-usefull-edit">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
                             </a>
@@ -115,8 +121,55 @@
                                     </a>
                                 </div>
                             </div>
-                            <form class="row prf-user-edit-form">
-                                a   
+                            <form class="form-horizontal prf-user-edit-form">
+                                <div class="form-group prf-user-usefull-social-group">
+                                    <div class="col-xs-9">
+                                        <input type="text" class="form-control prf-user-facebook-link-input" placeholder="facebook link">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <span class="prf-user-social-link">
+                                            <i class="fa fa-facebook-official"></i>
+                                        </span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <p class="alert-danger hidden">Textul nu poate fi mai mare de 300 caractere!</p>    
+                                    </div>
+
+                                </div>
+                                <div class="form-group prf-user-usefull-social-group">
+                                    <div class="col-xs-9">
+                                        <input type="text" class="form-control prf-user-twitter-link-input" placeholder="twitter link">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <span class="prf-user-social-link">
+                                            <i class="fa fa-twitter"></i>
+                                        </span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <p class="alert-danger hidden">Textul nu poate fi mai mare de 300 caractere!</p>    
+                                    </div>
+
+                                </div>
+                                <div class="form-group prf-user-usefull-social-group">
+                                    <div class="col-xs-9">
+                                        <input type="text" class="form-control prf-user-linkedin-link-input" placeholder="twitter link">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <span class="prf-user-social-link">
+                                            <i class="fa fa-linkedin"></i>
+                                        </span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <p class="alert-danger hidden">Textul nu poate fi mai mare de 300 caractere!</p>    
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <input type="submit" value="salveaza linkuri" class="btn btn-success prf-user-about-useful-send">
+                                        <a class="btn btn-default prf-user-about-social-cancel" href="javascript:;">anuleaza</a>
+                                    </div>
+                                </div>   
                             </form>
                             <span class="row prf-user-notext hidden">Utilizatorul nu a completat aceasta sectiune.</span>
                         </div>

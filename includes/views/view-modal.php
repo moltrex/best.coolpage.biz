@@ -13,12 +13,14 @@
                 <div class="modal-body">
                     <form action="">
                         <div class="row gp-edit-avatar-wrap">
-                            <div class="col-xs-12 col-sm-7 gp-add-new-avatar">
-                                <div class="action">
-                                    <input type="file" id="file" style="float:left; width: 250px">
-                                    <input type="button" id="btnCrop" value="Crop" style="float: right">
-                                    <input type="button" id="btnZoomIn" value="+" style="float: right">
-                                    <input type="button" id="btnZoomOut" value="-" style="float: right">
+                            <div class="col-xs-12 col-sm-6 gp-add-new-avatar">
+                                <div class="row action">
+                                    <input type="file" id="file">
+                                    <div class="row gp-add-new-avatar-row">
+                                        <input type="button" class="btn btn-success" id="btnCrop" value="Crop" style="float: right">
+                                        <input type="button" class="btn btn-primary" id="btnZoomIn" value="+" style="float: left">
+                                        <input type="button"  class="btn btn-primary" id="btnZoomOut" value="-" style="float: left">
+                                    </div>
                                 </div>
                                 <div class="imageBox">
                                     <div class="thumbBox"></div>
@@ -26,20 +28,21 @@
                                 </div>
 
                             </div>
-                            <div class="col-xs-12 col-sm-5 gp-preview-new-avatar">
+                            <div class="col-xs-12 col-sm-6 gp-preview-new-avatar">
+                                <span class="gp-preview-new-avatar-text">Incarcati imaginea dorita si apasati butonul crop pentru a obtine un preview al avatarului dumneavoastra.</span>
                                 <div class="cropped">
-
+                                    
                                 </div>
                             </div>
                             <script type="text/javascript">
                                 window.onload = function() {
                                     var options =
-                                    {
-                                        imageBox: '.imageBox',
-                                        thumbBox: '.thumbBox',
-                                        spinner: '.spinner',
-                                        imgSrc: 'avatar.png'
-                                    }
+                                        {
+                                            imageBox: '.imageBox',
+                                            thumbBox: '.thumbBox',
+                                            spinner: '.spinner',
+                                            imgSrc: 'avatar.png'
+                                        }
                                     var cropper;
                                     document.querySelector('#file').addEventListener('change', function(){
                                         var reader = new FileReader();
@@ -73,7 +76,7 @@
         </div>
     </div>
 
-    
+
     <!-- activate the add modal -->
     <div class="modal fade gp-modal-activate-add" tabindex="-1" role="dialog" aria-labelledby="gpModalAddActivate">
         <div class="modal-dialog modal-sm">
@@ -100,7 +103,7 @@
         </div>
     </div>
 
-    
+
     <!-- flag an add modal -->
     <div class="modal fade gp-modal-flag" tabindex="-1" role="dialog" aria-labelledby="gpModalFlag">
         <div class="modal-dialog">
@@ -138,7 +141,7 @@
         </div>
     </div>
 
-    
+
     <!-- delete / erase add -->
     <div class="modal fade gp-erase-adds" tabindex="-1" role="dialog" aria-labelledby="gpModalErase">
         <div class="modal-dialog">
@@ -206,8 +209,8 @@
             </div>
         </div>
     </div>
-    
-    
+
+
     <!-- modal tags tutorial -->
     <div class="modal fade gp-modal-tags" tabindex="-1" role="dialog" aria-labelledby="gpModalErase">
         <div class="modal-dialog">
