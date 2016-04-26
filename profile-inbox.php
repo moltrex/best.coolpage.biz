@@ -7,11 +7,11 @@
 
         <title>test site</title>
 
-        <?php  include 'includes/views/view-css.php'; ?>
+        <?php  include 'includes/views/template/view-css.php'; ?>
     </head>
     <body>
         <div class="row site-wrap">
-            <?php  include 'includes/views/view-top-bar.php'; ?>
+            <?php  include 'includes/views/template/view-top-bar.php'; ?>
 
             <div class="row main-content">
 
@@ -99,9 +99,9 @@
 
             <div class="push"></div>
         </div>
-        <?php  include 'includes/views/view-footer.php'; ?>
+        <?php  include 'includes/views/template/view-footer.php'; ?>
 
-        <?php  include 'includes/views/view-modal.php'; ?>
-        <?php  include 'includes/views/view-js.php'; ?>
+        <?php  include 'includes/views/template/view-modal.php'; ?>
+        <?php  include 'includes/views/template/view-js.php'; ?>
     </body>
 </html>

@@ -1,3 +1,6 @@
+// Textarea autoresize
+$('textarea').autogrow();
+
 // Activating nano scrollbar
 $('.nano').nanoScroller();
 $('.nano').nanoScroller({ alwaysVisible: true, scroll: 'top' });
@@ -392,6 +395,27 @@ $(function(){
 $(function(){
     $('.prf-user-about-social-cancel').on('click', function(){
         $(this).closest('.editable-section').removeClass('editable-section');
+    });
+});
+
+
+// profile dashboard show edit form
+
+$(function(){
+    $('.prf-user-dashboard-edit').on('click', function(){
+        $(this).hide();
+        $(this).closest('.prf-user-dashboard-form').removeClass('editable-section');
+        $(this).closest('.prf-user-dashboard-form').find('.prf-user-dashboard-form-input').removeAttr('disabled');
+    });
+});
+
+// profile dashboard hide edit form
+
+$(function(){
+    $('.prf-user-dashboard-cancel').on('click', function(){
+        $(this).closest('.prf-user-dashboard-form').addClass('editable-section');
+        $(this).closest('.prf-user-dashboard-form').find('.prf-user-dashboard-form-input').attr('disabled', true);
+        $(this).closest('.prf-user-dashboard-form').find('.prf-user-dashboard-edit').show();
     });
 });
 
