@@ -15,6 +15,9 @@
     .prf-user-section-wrap > div {text-align: center;}
     .prf-image-wrap, .prf-user-pref {float: none;}
     
+    /* *** dashboard section credits *** */
+    .prf-user-dashboard-credits {float: left}
+    
     /* *** send msg to user btns *** */   
     .prf-primary-details-buttons, .pref-user-adds-filters {text-align: center;}
     
@@ -27,14 +30,21 @@
     .footer, .push {height: 100px;}
     .footer-section-text-wrap, .footer-menu-wrap {display: none;}
     .copyright {margin-top: 10px;padding: 15px 0;}
+    
 }
 
 /* Mobile */
 @media (max-width: 480px) {
     .menu-profile-btn > .top-user-register-text, .top-bar-new-add-wrap-text {display: none;}
+    
+    /* *** dashboard section credits *** */
+    .prf-user-dashboard-credits {float: left}
 }
 
-@media (max-width: 320px) { }
+@media (max-width: 320px) {
+    /* *** dashboard section credits *** */
+    .prf-user-dashboard-credits {float: left}
+}
 
 
 

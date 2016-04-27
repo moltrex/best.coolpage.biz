@@ -359,6 +359,8 @@ $(function(){
         if(cob.usefullLinkNr < 4){
             cob.usefullLinkGroup = $(this).closest('.prf-user-usefull-form-group').clone();
             $(this).closest('.prf-user-usefull-form-group').after(cob.usefullLinkGroup);
+            $(this).closest('.prf-user-usefull-form-group').next('.prf-user-usefull-form-group').find('.prf-user-usefull-label-input').val('');
+            $(this).closest('.prf-user-usefull-form-group').next('.prf-user-usefull-form-group').find('.prf-user-usefull-link-input').val('');
             cob.usefullLinkNr++;
 
         };
@@ -419,4 +421,18 @@ $(function(){
     });
 });
 
+
+// profile dashboard show / hide add credits form
+
+$(function(){
+    $('.prf-user-dashboard-credtits-link').on('click', function(){
+        $(this).hide();
+        $(this).next('.prf-user-dashboard-credits-form').show();
+    });
+    
+    $('.prf-user-dashboard-credits-cancel').on('click', function(){
+        $(this).closest('.prf-user-dashboard-form').hide();
+        $(this).closest('.prf-user-dashboard-form').siblings('.prf-user-dashboard-credtits-link').show();
+    });
+});
 

@@ -295,9 +295,6 @@ a.btn-logo:hover, a.btn-logo:focus, a.btn-logo:active {
 }
 .menu-profile-dropdown .menu-profile {
     border: 1px solid #ddd;
-    -moz-box-shadow: 0 3px 2px #ddd;
-    -webkit-box-shadow: 0 3px 2px #ddd;
-    box-shadow: 0 3px 2px #ddd;
     color: #333;
     display: none;
     margin-top: 15px;
@@ -1487,11 +1484,27 @@ button.prf-image-edit {
     -o-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent;
     cursor: default;
+    padding-left: 0;
 }
-
+.prf-user-dashboard-credits {
+    float: right
+}
 .prf-user-dashboard-form.editable-section .prf-user-dashboard-btns {
     display: none;
 }
-
+.prf-user-dashboard-credits-text {
+    color: #5cb85c;
+    float: right;
+    font-weight: 800;
+}
+.prf-user-dashboard-credtits-link {
+    width: 100%;
+}
+.prf-user-dashboard-credits-form {
+    border-top: 1px solid #ccc;
+    display: none;
+    margin-top: 15px;
+    padding: 15px 0 0;
+}
 
 
