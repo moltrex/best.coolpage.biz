@@ -29,7 +29,7 @@
                                     <span>Credite disponibile</span>
                                     <span class="prf-user-dashboard-credits-text">3.72</span>
                                 </div>
-                                <a href="javascript:;" class="btn btn-success prf-user-dashboard-credtits-link">adaoga credite</a>
+                                <a href="javascript:;" class="btn btn-success prf-user-dashboard-credtits-link">adauga credite</a>
                                 <form class="row prf-user-dashboard-form prf-user-dashboard-credits-form">
                                     <div class="form-group">
                                         <label>Cumpara credite</label>
@@ -117,10 +117,7 @@
                                     </div>
                                 </form>
                             </div>
-                        </div>
 
-
-                        <div class="col-xs-12 col-sm-8">
                             <div class="row prf-user-dashboard-section">
                                 <form class="form-horizontal prf-user-dashboard-password-change prf-user-dashboard-form editable-section">
                                     <div class="row prf-user-dashboard-title">
@@ -160,6 +157,47 @@
                                 </form>
                             </div>
                         </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="row prf-user-dashboard-section">
+                                <form class="form-horizontal prf-user-dashboard-newsletter-wrap prf-user-dashboard-form editable-section">
+                                    <div class="row prf-user-dashboard-title">
+                                        <span>Setari newsletter</span>
+                                    </div>
+                                    <a class="prf-user-dashboard-edit" href="javascript:;">
+                                        <i aria-hidden="true" class="fa fa-pencil"></i>
+                                    </a> 
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-9">
+                                            <label>Newsletter saptamanal</label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <input type="checkbox" class="prf-user-dashboard-form-input" disabled checked>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="alert-danger hidden">Textul nu poate fi mai mare de 300 caractere!</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-9">
+                                            <label>Newsletter oferte</label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <input type="checkbox" class="prf-user-dashboard-form-input" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="alert-danger hidden">Textul nu poate fi mai mare de 300 caractere!</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12 prf-user-dashboard-btns">
+                                            <input type="submit" value="salveaza" class="btn btn-success prf-user-dashboard-submit">
+                                            <a class="btn btn-default prf-user-dashboard-cancel" href="javascript:;">anuleaza</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 

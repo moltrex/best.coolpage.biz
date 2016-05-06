@@ -1,6 +1,6 @@
 <div class="row top-bar">
     <div class="logo-wrap">
-        <a href="index.php" class="btn btn-default btn-logo">
+        <a href="index.php" class="btn-logo">
             <span class="logo-simbol"></span>
             <span class="logo-text">test-site</span>
         </a>

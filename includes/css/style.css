@@ -1506,5 +1506,58 @@ button.prf-image-edit {
     margin-top: 15px;
     padding: 15px 0 0;
 }
-
+.newadd-page-title, .newadd-form {
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 1px 1px 0 rgba(0, 0, 0, 0.03), -1px 0 0 0 rgba(0, 0, 0, 0.03);
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+.newadd-page-title h1 {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+.newadd-image-upload {
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 1px 1px 0 rgba(0, 0, 0, 0.03), -1px 0 0 0 rgba(0, 0, 0, 0.03), 0 -1px 0 0 rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+    height: 100px;
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    width: 100px;
+    
+}
+.newadd-image-text {
+    color: #999;
+    display: block;
+    font-size: 12px;
+    padding: 12px 15px;
+    text-align: center;
+    width: 100%;
+}
+.newadd-image-icon {
+    color: #ccc;
+    display: inline-block;
+    font-size: 26px;
+    line-height: 14px;
+    text-align: center;
+    width: 100%;
+}
+.newadd-form-title {
+    margin-bottom: 5px;
+}
+.newadd-form-title label {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+.form-horizontal .newadd-form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
 
