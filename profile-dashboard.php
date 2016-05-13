@@ -189,6 +189,17 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
+                                        <div class="col-xs-12 col-sm-9">
+                                            <label>Newsletter urgent</label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <input type="checkbox" class="prf-user-dashboard-form-input" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="alert-danger hidden">Textul nu poate fi mai mare de 300 caractere!</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
                                         <div class="col-xs-12 prf-user-dashboard-btns">
                                             <input type="submit" value="salveaza" class="btn btn-success prf-user-dashboard-submit">
                                             <a class="btn btn-default prf-user-dashboard-cancel" href="javascript:;">anuleaza</a>

@@ -1506,6 +1506,29 @@ button.prf-image-edit {
     margin-top: 15px;
     padding: 15px 0 0;
 }
+
+.newadd-wrap .nav.nav-tabs {
+    border: medium none;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+.newadd-wrap .nav-tabs > li {
+    display: inline-block;
+    float: none;
+}
+.newadd-wrap .nav-tabs > li > a {
+    font-size: 12px;
+}
+.newadd-wrap .nav-tabs > li > a:hover {
+    border-bottom: none;
+}
+.newadd-wrap .nav-tabs > li.active > a {
+    background-color: #5cb85c;
+    border: 1px solid #4cae4c;
+    color: #fff;
+    font-weight: 700;
+}
 .newadd-page-title, .newadd-form {
     background-color: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 1px 1px 0 rgba(0, 0, 0, 0.03), -1px 0 0 0 rgba(0, 0, 0, 0.03);
@@ -1519,7 +1542,7 @@ button.prf-image-edit {
     margin: 5px 0;
     text-transform: uppercase;
 }
-.newadd-image-upload {
+.newadd-image-standard-upload {
     background-color: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 1px 1px 0 rgba(0, 0, 0, 0.03), -1px 0 0 0 rgba(0, 0, 0, 0.03), 0 -1px 0 0 rgba(0, 0, 0, 0.03);
     cursor: pointer;
@@ -1530,7 +1553,7 @@ button.prf-image-edit {
     width: 100px;
     
 }
-.newadd-image-text {
+.newadd-image-standard-text {
     color: #999;
     display: block;
     font-size: 12px;
@@ -1538,7 +1561,7 @@ button.prf-image-edit {
     text-align: center;
     width: 100%;
 }
-.newadd-image-icon {
+.newadd-image-standard-icon {
     color: #ccc;
     display: inline-block;
     font-size: 26px;
@@ -1559,5 +1582,8 @@ button.prf-image-edit {
 .form-horizontal .newadd-form-group {
     margin-left: 0;
     margin-right: 0;
+}
+.newadd-form-subcategorie {
+    padding: 0
 }
 

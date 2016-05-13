@@ -175,7 +175,7 @@
                 </div>
             </div>
             <div class="btn-group top-bar-new-add-wrap" aria-label="visitorsButtonNewAdd">
-                <a title="" data-placement="bottom" data-toggle="tooltip" href="javascript:;"
+                <a title="" data-placement="bottom" data-toggle="tooltip" href="newadd.php"
                    class="btn btn-default btn-success top-bar-new-add-wrap-link"
                    data-original-title="Adaoga anuntul tau gratuit">
                     <span class="top-bar-new-add-wrap-icon">
