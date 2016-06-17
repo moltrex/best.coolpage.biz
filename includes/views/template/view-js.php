@@ -4,6 +4,9 @@
 <!-- jQuery autogrow -->
 <script src="assets/textareaAutoGrow/jquery.autogrow-textarea.js"></script>
 
+<!-- flexSlider -->
+<script src="assets/woothemes-FlexSlider-622f7fd/slippry.min.js"></script>
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="assets/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
      

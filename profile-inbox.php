@@ -29,7 +29,7 @@
                         </div>
                         <div class="row prf-msg-row">
                             <div class="col-xs-12 prf-msg-text-title prf-msg-read">
-                                <span>Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</span>
+                                <a href="javascript:;" class="prf-msg-toggle-link">Bluza fara maneci Dama G-Star Raw Verde 4971-TSD175</a>
                             </div>
                             <div class="col-xs-12 col-sm-10 prf-msg-from">
                                 <span>iluca.silviu@gmail.com</span> 
@@ -40,12 +40,6 @@
                             <div class="col-xs-10 col-sm-11 prf-msg-date">
                                 <span>20 Oct</span>
                             </div>
-                            <div class="col-xs-1 col-sm-1 prf-msg-toggle">
-                                <a href="javascript:;" class="prf-msg-toggle-link" data-placement="bottom" data-toggle="tooltip" data-original-title="Vezi conversatia.">
-                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                </a>
-                            </div>
-
                             <div class="col-xs-12 col-sm-12 prf-msg-text-wrap">
                                 <div class="row prf-msg-text-original">
                                     <p>Salut, ma intrebam daca mai disponibil anuntul, si daca poti sa imi explici mai exact pe unde e exact. </p>
@@ -75,7 +69,7 @@
                                     <form>
                                         <div class="form-group">
                                             <label for="prf-msg-reply-label">Mesajul tau</label>
-                                            <textarea rows="4" cols="50" class="form-control prf-reply-text" value=""></textarea>
+                                            <textarea rows="4" cols="50" class="form-control" value=""></textarea>
                                         </div> 
                                         <div class="form-group">
                                             <input type="file" class="prf-msg-file-upload">

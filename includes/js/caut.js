@@ -313,7 +313,7 @@ var cropbox = function(options){
 
 $(function(){
     $('.prf-msg-toggle-link').on('click', function(){  
-        $(this).parent().next('.prf-msg-text-wrap').toggleClass('active');
+        $(this).parent().siblings('.prf-msg-text-wrap').toggleClass('active');
         $(this).parent().closest('.prf-msg-text-title').addClass('prf-msg-read');
     });
 });
@@ -436,3 +436,10 @@ $(function(){
     });
 });
 
+// Can also be used with $(document).ready()
+$(document).ready(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
+});
