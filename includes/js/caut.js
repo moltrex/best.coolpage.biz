@@ -429,17 +429,32 @@ $(function(){
         $(this).hide();
         $(this).next('.prf-user-dashboard-credits-form').show();
     });
-    
+
     $('.prf-user-dashboard-credits-cancel').on('click', function(){
         $(this).closest('.prf-user-dashboard-form').hide();
         $(this).closest('.prf-user-dashboard-form').siblings('.prf-user-dashboard-credtits-link').show();
     });
 });
 
-// Can also be used with $(document).ready()
+
+//Responsive slider
+
 $(document).ready(function() {
-  $('.flexslider').flexslider({
-    animation: "slide",
-    controlNav: "thumbnails"
-  });
+    $(".rslides").responsiveSlides({
+        pager: true,           // Boolean: Show pager, true or false
+        nav: true,             // Boolean: Show navigation, true or false
+        pause: true,           // Boolean: Pause on hover, true or false
+        prevText: "<i class='fa fa-angle-left' aria-hidden='true'></i>",   // String: Text for the "previous" button
+        nextText: "<i class='fa fa-angle-right' aria-hidden='true'></i>",       // String: Text for the "next" button
+    });
+});
+
+$(window).load(function(){
+    cob.sliderImageHeight = Math.min.apply(Math, $('.bp-product-slider-image').map(function(){return $(this).height()}).get());
+    $('.rslides').css('height', cob.sliderImageHeight);
+});
+$(window).resize(function(){
+    $('.rslides').css('height', 'auto');
+    cob.sliderImageHeight = Math.min.apply(Math, $('.bp-product-slider-image').map(function(){return $(this).height()}).get());
+    $('.rslides').css('height', cob.sliderImageHeight);
 });

@@ -14,9 +14,40 @@
             <?php  include 'includes/views/template/view-top-bar.php'; ?>
 
             <div class="row main-content">
-                <div class="container bigads-page-wrap">
+                
+                <!-- CAROUSEL -->
+                
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 bp-product-pic-slider">
+                    <ul class="rslides">
+                        <li>
+                            <img class="bp-product-slider-image" src="includes/userpic/01-650.jpg" alt="">
+                        </li>
+                        <li>
+                            <img class="bp-product-slider-image" src="includes/userpic/02-650.jpg" alt="">
+                        </li>
+                        <li>
+                            <img class="bp-product-slider-image" src="includes/userpic/03-650.jpg" alt="">
+                        </li>
+                        <li>
+                            <img class="bp-product-slider-image" src="includes/userpic/04-650.jpg" alt="">
+                        </li>
+                        <li>
+                            <img class="bp-product-slider-image" src="includes/userpic/05-650.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- END CAROUSEL -->
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 bigads-page-wrap">
                     <div class="row bp-add-main-details">
                         <div class="col-xs-12">
+                            <div class="row bp-product-data">
+                                <span class="bp-product-id">ID anunt: 365895647</span>
+                                <span class="bp-product-date">Data anunt: 15-12-2016</span>
+                                <span class="bp-product-owner-label">Postat de:</span>
+                                <a href="profile-ads.php" class="bp-product-owner-link">iluca.silviu</a>
+                            </div>
                             <div class="row bp-product-title">
                                 <span>CALCULATOR DESKTOP HP DC5750 AMD ATH X2 4400+/4GB/80GB/DVD-RW+CARD READER CADOU</span>
                             </div>
@@ -60,25 +91,25 @@
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <div class="form-horizontal">
-                                    <div class="col-xs-12 col-sm-6 col-lg-4 form-group">
+                                    <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
                                         <label for="inputEmail3" class="col-xs-5 control-label">Autor anunt</label>
                                         <div class="col-xs-7">
                                             <span class="form-control">Proprietar</span>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-6 col-lg-4 form-group">
+                                    <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
                                         <label for="inputEmail3" class="col-xs-5 control-label">Numar anunt</label>
                                         <div class="col-xs-7">
                                             <span class="form-control">368953641</span>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-6 col-lg-4 form-group">
+                                    <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
                                         <label for="inputEmail3" class="col-xs-5 control-label">Adaugat pe</label>
                                         <div class="col-xs-7">
                                             <span class="form-control">20 Oct 2015</span>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-6 col-lg-4 form-group">
+                                    <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
                                         <label for="inputEmail3" class="col-xs-5 control-label">Localitate</label>
                                         <div class="col-xs-7">
                                             <span class="form-control">Constanta</span>
@@ -94,29 +125,7 @@
                             <span data-original-title="Click pentru a vedea nr de talefon" data-toggle="tooltip" class="btn btn-success btn-lg bp-auth-phone">07********</span>
                         </div>
                     </div>
-                    <div class="row bp-product-pic">
-                        <div class="col-xs-12">
-                            <!-- The container for the list of example images -->
-                            <div id="links">
-                                <a data-gallery="" title="CALCULATOR DESKTOP HP DC5750 AMD ATH X2 4400+/4GB/80GB/DVD-RW+CARD READER CADOU" href="includes/userpic/02-1000.jpg">
-                                    <img alt="" src="includes/userpic/03-100.jpg">
-                                </a>
-                                <a data-gallery="" title="CALCULATOR DESKTOP HP DC5750 AMD ATH X2 4400+/4GB/80GB/DVD-RW+CARD READER CADOU" href="includes/userpic/05-1000.jpg">
-                                    <img alt="" src="includes/userpic/06-100.jpg">
-                                </a>
-                                <a data-gallery="" title="CALCULATOR DESKTOP HP DC5750 AMD ATH X2 4400+/4GB/80GB/DVD-RW+CARD READER CADOU" href="includes/userpic/08-1000.jpg">
-                                    <img alt="" src="includes/userpic/09-100.jpg">
-                                </a>
-                                <a data-gallery="" title="CALCULATOR DESKTOP HP DC5750 AMD ATH X2 4400+/4GB/80GB/DVD-RW+CARD READER CADOU" href="includes/userpic/11-1000.jpg">
-                                    <img alt="" src="includes/userpic/12-100.jpg">
-                                </a>
-                                <a data-gallery="" title="CALCULATOR DESKTOP HP DC5750 AMD ATH X2 4400+/4GB/80GB/DVD-RW+CARD READER CADOU" href="includes/userpic/14-1000.jpg">
-                                    <img alt="" src="includes/userpic/15-100.jpg">
-                                </a>
 
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 

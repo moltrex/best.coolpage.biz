@@ -604,19 +604,9 @@
                                             <input type="radio" name="invoice-prod" id="no-invoice-prod"> 
                                             <label for="no-invoice-prod">Fara factura</label>
                                         </li>
-                                        <!--<li>
-<input id="with-retur" type="checkbox" name="with-retur"> 
-<label for="with-retur">Se poate returna</label>
-</li>
-<li>
-<input id="no-retur" type="checkbox" name="no-retur"> 
-<label for="no-retur">Nu se poate returna</label>
-</li> -->
-
                                     </ul>
                                 </div>
                             </div>
-                            <div class="divider"></div> 
                             <div class="col-xs-12 col-sm-4 filter-section">
                                 <p class="row section-title">Marca</p>
                                 <div class="row filter-section-wrap">

@@ -1,52 +1,56 @@
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media screen and (min-width: 1200px) {  }
 
 
 /* Medium devices (desktops, max 992px) */
-@media (max-width: 992px){ }
+@media screen and (max-width: 992px){
+    .footer-section-wrap {
+        padding: 0 10px;
+    }
+    .copyright {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+}
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 992px) { }
+@media screen and (min-width: 768px) and (max-width: 992px) { }
 
 /* Mobile landscape view and tablets */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .prf-user-menu-text, .dropdown-category-title {display: none;}
     .prf-user-section-wrap > div {text-align: center;}
     .prf-image-wrap, .prf-user-pref {float: none;}
-    
+
     /* *** dashboard section credits *** */
     .prf-user-dashboard-credits {float: left}
-    
+
     /* *** send msg to user btns *** */   
     .prf-primary-details-buttons, .pref-user-adds-filters {text-align: center;}
-    
+
     /* *** profile checkbox messages *** */
     .prf-msg-chk {padding-left: 15px; padding-right: 0;}
     .prf-msg-chk input {float: left;}
-    
+
     /* *** sticky footer *** */
-    .site-wrap {margin: 0 auto -100px;}
-    .footer, .push {height: 100px;}
+    .site-wrap {margin: 0 auto -150px;}
+    .footer, .push {height: 150px;}
     .footer-section-text-wrap, .footer-menu-wrap {display: none;}
-    .copyright {margin-top: 10px;padding: 15px 0;}
-    
+    .copyright {margin-top: 20px;padding: 20px 0 0;}
+
 }
 
 /* Mobile */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .menu-profile-btn > .top-user-register-text, .top-bar-new-add-wrap-text {display: none;}
-    
+
     /* *** dashboard section credits *** */
     .prf-user-dashboard-credits {float: left}
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
     /* *** dashboard section credits *** */
     .prf-user-dashboard-credits {float: left}
 }
-
-
-
-
 

@@ -1,7 +1,6 @@
 
 <div class="row modal-div">
-    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-
+   
     <!-- avatar edit modal -->
     <div class="modal fade gp-modal-edit-avatar" tabindex="-1" role="dialog" aria-labelledby="gpModalAvatarEdit">
         <div class="modal-dialog">
@@ -141,7 +140,34 @@
         </div>
     </div>
 
+    
+    <!-- modal forget pass -->
+    <div class="modal fade gp-modal-forget-pass" tabindex="-1" role="dialog" aria-labelledby="gpModalForgetPass">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Am uitat parola!</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row gp-modal-to-email">
+                            <label>Email:</label> 
+                            <input class="form-control gp-modal-send-msg-email" placeholder="Email" />
+                        </div>
+                        <div class="row gp-modal-captcha">
+                            <label>loc pt captcha</label> 
+                        </div>
+                        <div class="row gp-modal-submit">
+                            <input type="submit" class="btn btn-primary gp-modal-flag-submit-btn" value="trimite" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    
     <!-- delete / erase add -->
     <div class="modal fade gp-erase-adds" tabindex="-1" role="dialog" aria-labelledby="gpModalErase">
         <div class="modal-dialog">

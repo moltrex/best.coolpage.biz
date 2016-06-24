@@ -49,8 +49,7 @@
                         </div>
                         <div class="row userSubmit">
                             <div class="col-xs-6">
-                                <input type="submit" value="Autentificare" class="btn btn-primary"
-                                       id="userSubmit userLogin">
+                                <input type="submit" value="Autentificare" class="btn btn-primary" id="userSubmit userLogin">
                             </div>
                             <div class="col-xs-6">
                                 <a class="btn userRegisterLink" href="javascript:;">Inregistrare</a>
@@ -63,12 +62,13 @@
                         </div>
                         <div class="row forgetPassword">
                             <div class="col-xs-12">
-                                <a href="javascript:;" class="forgetPasswordText"><i class="fa fa-bed"></i> Am uitat parola!</a>
+                                <a href="javascript:;" data-toggle="modal" data-target=".gp-modal-forget-pass" class="forgetPasswordText"><i class="fa fa-bed"></i> Am uitat parola!</a>
                             </div>
                         </div>
-
                     </form>
-                    <form action="" class="formRegister hidden">
+                    
+                    
+                    <form action="" class="formRegister">
                         <div class="row">
                             <div class="col-xs-12">
                                 <label class="title">Creare cont</label>
@@ -114,7 +114,7 @@
                             <div class="col-xs-12">
                                 <p>
                                     Apasand pe butonul de "Creare cont", sunteti de acord cu 
-                                    <a class="topLink" href="#">Termenii de utilizare</a> 
+                                    <a class="topLink" href="static.php">Termenii de utilizare</a> 
                                     ai site-ului Cautsa.ro.
                                 </p>
                             </div>
@@ -129,7 +129,9 @@
                             </div>
                         </div>
                     </form>
-                    <div class="row userProfileDropdown">
+
+
+                    <div class="row userProfileDropdown hidden">
                         <div class="row">
                             <div class="col-xs-12">
                                 <label class="title"><span class="hiMessage">Bun venit,</span></label>
@@ -149,7 +151,7 @@
                         </div>
                         <div class="row nopad userProfileDropdownHelp">
                             <div class="col-xs-12">
-                                <a href="javascript:;">Ai nevoie de ajutor?</a>
+                                <a href="static.php">Ai nevoie de ajutor?</a>
                             </div>
                         </div>
                         <div class="row">
@@ -168,7 +170,7 @@
                         </div>
                         <div class="row nopad userProfileDropdownLogOut">
                             <div class="col-xs-12">
-                                <a href="#">Logout</a>
+                                <a href="javascript:;">Logout</a>
                             </div>
                         </div>
                     </div>

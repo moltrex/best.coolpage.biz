@@ -11,8 +11,8 @@
 <!-- flag icons css -->
 <link rel="stylesheet" href="assets/flag-icon-css-master/css/flag-icon.css">   
 
-<!--FlexSlider-->
-<link rel="stylesheet" href="assets/woothemes-FlexSlider-622f7fd/flexslider.css">   
+<!-- Responsive slider -->
+<link rel="stylesheet" href="assets/ResponsiveSlides.js-master/responsiveslides.css">   
 
 <!-- Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
